@@ -1,0 +1,329 @@
+.header {
+    width: 100%;
+    background-color: var(--blanco);
+    border-bottom: 1px solid var(--borde);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-contenido {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: var(--verde-profundo);
+    font-size: 27px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--verde-principal);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: var(--texto);
+    transition: color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.activo {
+    color: var(--verde-oscuro);
+}
+
+.accesos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.accesos a {
+    font-size: 23px;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: #e8f0e5;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(15, 45, 27, 0.75),
+            rgba(15, 45, 27, 0.15)
+        ),
+        url("../img/hero/banner-ecologico.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-contenido {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero .etiqueta {
+    color: #d7f5dc;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    max-width: 650px;
+    color: var(--blanco);
+    margin-bottom: 20px;
+}
+
+.hero-contenido > p:not(.etiqueta) {
+    max-width: 480px;
+    color: var(--blanco);
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-seccion .etiqueta {
+    margin-bottom: 10px;
+}
+
+.titulo-seccion h2 {
+    margin-bottom: 14px;
+}
+
+.titulo-seccion > p:last-child {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.categorias {
+    background-color: var(--fondo);
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.categoria {
+    padding: 28px 18px;
+    text-align: center;
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+}
+
+.categoria span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.categoria h3 {
+    margin-bottom: 8px;
+}
+
+.categoria p {
+    font-size: 13px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.tarjeta-producto {
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.producto-info {
+    padding: 20px;
+}
+
+.categoria-producto {
+    color: var(--verde-oscuro);
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.producto-info h3 {
+    margin-bottom: 10px;
+}
+
+.producto-info > p:not(.categoria-producto) {
+    margin-bottom: 18px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.mensaje-ecologico {
+    padding: 75px 0;
+    text-align: center;
+    background-color: var(--verde-profundo);
+}
+
+.mensaje-ecologico .etiqueta {
+    color: #b9ebc9;
+    margin-bottom: 12px;
+}
+
+.mensaje-ecologico h2 {
+    color: var(--blanco);
+    margin-bottom: 15px;
+}
+
+.mensaje-ecologico p:not(.etiqueta) {
+    color: #e4f1e7;
+    margin-bottom: 25px;
+}
+
+.footer {
+    background-color: var(--beige);
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-grid h3 {
+    margin-bottom: 15px;
+}
+
+.footer-enlaces a {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--texto-secundario);
+}
+
+.footer-final {
+    padding: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-final p {
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+
+    .header-contenido {
+        flex-wrap: wrap;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header-contenido {
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .menu {
+        gap: 14px;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .accesos {
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 420px;
+        background-position: center;
+    }
+
+    .hero-contenido {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .hero-contenido > p:not(.etiqueta) {
+        font-size: 14px;
+    }
+
+    .categorias-grid {
+        gap: 12px;
+    }
+
+    .categoria {
+        padding: 20px 10px;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .tarjeta-producto img {
+        height: 240px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .mensaje-ecologico {
+        padding: 50px 0;
+    }
+}
