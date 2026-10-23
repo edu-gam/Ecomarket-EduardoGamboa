@@ -4,6 +4,10 @@
 
 El proyecto fue desarrollado utilizando HTML5 y CSS3, con un diseño adaptable a computadores y dispositivos móviles.
 
+## 🌐 Sitio web publicado
+
+Visita EcoMarket: [Abrir página web](https://ecomarket-chi.vercel.app/)
+
 ## 📸 Vista previa del proyecto
 
 ### 🎨 Mockup
