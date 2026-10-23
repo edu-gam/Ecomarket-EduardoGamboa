@@ -11,7 +11,7 @@ El proyecto fue desarrollado utilizando HTML5 y CSS3, con un diseño adaptable a
 Diseño de referencia utilizado para la apariencia visual del sitio web.
 
 
-<img src="mockup/mockup-ecomarket.png" alt="Mockup de EcoMarket" width="225">
+![Mockup EcoMarket](capturas/mockup-ecomarket.png)
 
 
 ### 💻 Vista en computador
