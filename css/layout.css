@@ -565,3 +565,35 @@
         width: 100%;
     }
 }
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 140px;
+    }
+}
+
+.logo,
+.logo:visited,
+.logo:hover,
+.logo:active {
+    color: var(--verde-profundo);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--verde-profundo);
+}
